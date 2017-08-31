@@ -16,8 +16,6 @@
   copy:
     dest: /etc/netdata/conf.d/netdata.conf
     content: |
-      # {{ ansible_managed }}
-
       [global]
         hostname = {{ hostname }}
   register: netdata_conf
@@ -32,8 +30,6 @@
   copy:
     dest: /etc/systemd/system/netdata.service
     content: |
-      # {{ ansible_managed }}
-
       [Unit]
       Description=Netdata metrics daemon
       After=docker.service
