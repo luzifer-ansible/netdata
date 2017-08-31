@@ -39,8 +39,6 @@
       [Service]
       RemainAfterExit=yes
 
-      EnvironmentFile=-/etc/netdata/environment
-
       ExecStartPre=/usr/bin/docker pull quay.io/luzifer/netdata
       ExecStartPre=-/usr/bin/docker rm -f netdata
 
@@ -50,6 +48,7 @@
                                     -v /etc/netdata:/override:ro \
                                     -v /var/run/docker.sock:/var/run/docker.sock \
                                     -p 19999:19999 \
+                                    --env-file=/etc/netdata/environment \
                                     --name=netdata \
                                     quay.io/luzifer/netdata:{{ version }}
 
