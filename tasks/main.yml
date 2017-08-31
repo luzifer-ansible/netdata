@@ -24,6 +24,7 @@
   template:
     dest: /etc/netdata/environment
     src: environment.j2
+    mode: 0600
   register: configuration
 
 - name: Install netdata systemctl service
