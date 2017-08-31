@@ -1,3 +1,7 @@
+# 0.2.0 / 2017-08-31
+
+  * Add persistent data volume
+
 # 0.1.3 / 2017-08-31
 
   * Fix: The environment needs to be loaded into the container
