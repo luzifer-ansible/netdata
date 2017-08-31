@@ -47,6 +47,7 @@
                                     -v /sys:/host/sys:ro \
                                     -v /etc/netdata:/override:ro \
                                     -v /var/run/docker.sock:/var/run/docker.sock \
+                                    -v /var/lib/netdata:/var/lib/netdata \
                                     -p 19999:19999 \
                                     --env-file=/etc/netdata/environment \
                                     --name=netdata \
