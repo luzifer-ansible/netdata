@@ -1,3 +1,7 @@
+# 0.3.0 / 2017-09-01
+
+  * Prevent massive amount of apparmor errors
+
 # 0.2.0 / 2017-08-31
 
   * Add persistent data volume
