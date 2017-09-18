@@ -39,7 +39,7 @@
       [Service]
       RemainAfterExit=yes
 
-      ExecStartPre=/usr/bin/docker pull quay.io/luzifer/netdata
+      ExecStartPre=/usr/bin/docker pull quay.io/luzifer/netdata:{{ version }}
       ExecStartPre=-/usr/bin/docker rm -f netdata
 
       ExecStart=/usr/bin/docker run -d --cap-add SYS_PTRACE \
