@@ -1,3 +1,7 @@
+# 0.3.3 / 2017-09-18
+
+  * Fix: Don't reload when the service was just restarted
+
 # 0.3.2 / 2017-09-18
 
   * Fix: On slow hosts docker pull runs into timeout
