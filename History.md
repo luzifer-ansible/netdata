@@ -1,3 +1,7 @@
+# 0.3.1 / 2017-09-18
+
+  * Fix: Pull same version as later being used
+
 # 0.3.0 / 2017-09-01
 
   * Prevent massive amount of apparmor errors
