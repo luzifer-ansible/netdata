@@ -38,6 +38,7 @@
 
       [Service]
       RemainAfterExit=yes
+      TimeoutSec=infinity
 
       ExecStartPre=/usr/bin/docker pull quay.io/luzifer/netdata:{{ version }}
       ExecStartPre=-/usr/bin/docker rm -f netdata
