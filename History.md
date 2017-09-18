@@ -1,3 +1,7 @@
+# 0.3.2 / 2017-09-18
+
+  * Fix: On slow hosts docker pull runs into timeout
+
 # 0.3.1 / 2017-09-18
 
   * Fix: Pull same version as later being used
