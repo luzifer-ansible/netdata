@@ -75,4 +75,4 @@
   systemd:
     name: netdata.service
     state: reloaded
-  when: configuration.changed or netdata_conf.changed
+  when: (configuration.changed or netdata_conf.changed) and not service.changed
