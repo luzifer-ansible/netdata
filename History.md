@@ -1,3 +1,7 @@
+# 0.4.0 / 2018-11-30
+
+  * Switch image to dockerhub
+
 # 0.3.3 / 2017-09-18
 
   * Fix: Don't reload when the service was just restarted
