@@ -40,7 +40,7 @@
       RemainAfterExit=yes
       TimeoutSec=infinity
 
-      ExecStartPre=/usr/bin/docker pull quay.io/luzifer/netdata:{{ version }}
+      ExecStartPre=/usr/bin/docker pull luzifer/netdata:{{ version }}
       ExecStartPre=-/usr/bin/docker rm -f netdata
 
       ExecStart=/usr/bin/docker run -d --cap-add SYS_PTRACE \
@@ -53,7 +53,7 @@
                                     -p 19999:19999 \
                                     --env-file=/etc/netdata/environment \
                                     --name=netdata \
-                                    quay.io/luzifer/netdata:{{ version }}
+                                    luzifer/netdata:{{ version }}
 
       ExecReload=/usr/bin/docker restart netdata
 

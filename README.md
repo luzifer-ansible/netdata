@@ -1,6 +1,6 @@
 # Luzifer-Ansible / netdata
 
-This role installs a systemd service running [netdata](https://github.com/firehol/netdata) using Docker and my [Docker image](https://quay.io/luzifer/netdata) for it.
+This role installs a systemd service running [netdata](https://github.com/firehol/netdata) using Docker and my [Docker image](https://hub.docker.com/r/luzifer/netdata/) for it.
 
 ## Usage
 
